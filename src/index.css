@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=DM+Sans:wght@400;450;500;550;600;650;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f0f0e8;
+  background: #101310;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #101310;
+  --panel: #171b17;
+  --panel-raised: #1c211c;
+  --line: rgba(223, 231, 212, .1);
+  --line-strong: rgba(223, 231, 212, .18);
+  --muted: #92978e;
+  --soft: #bdc2b8;
+  --paper: #f0f0e8;
+  --accent: #8ab8ff;
+  --accent-deep: #6393d4;
+  --accent-wash: rgba(106, 159, 232, .12);
+  --accent-border: rgba(138, 184, 255, .34);
+  --serif: 'Bodoni Moda', Georgia, serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; background: var(--ink); scroll-behavior: smooth; }
+
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+
+button, input { font: inherit; }
+
+button { color: inherit; }
+
+button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+button:disabled { cursor: not-allowed; }
+
+::selection { color: var(--ink); background: var(--accent); }
+
+::-webkit-scrollbar { width: 8px; height: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #343b32; border: 2px solid var(--ink); border-radius: 8px; }
